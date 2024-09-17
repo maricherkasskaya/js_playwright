@@ -71,7 +71,7 @@ test('Пользователь может изменить bio', async ({ page }
 
     await mainPage.goToNewArticle();
     await articlePage.publish(newArticle.articleTitle, newArticle.articleAbout, newArticle.articleWrigt, newArticle.articleTags)
-    await expect(page.getByRole('heading', { name: newArticle.articleTitle })).toBeVisible();
+    await expect (page.getByRole('heading', { name: newArticle.articleTitle })).toBeVisible();
 
   });
 
