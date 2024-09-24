@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test';
-import { userCreate, articleCreate, commentCreate } from '../instruments/faker';
+import {userCreate} from '../instruments/user.data';
+import {articleCreate} from '../instruments/articles.data';
+import {commentCreate} from '../instruments/comment.data'
 import { MainPage, RegisterPage, SettingsPage, ArticlePage } from '../src/pages/index';
 
 const url  = 'https://realworld.qa.guru/#/';
